@@ -1,4 +1,6 @@
-const { NotImplementedError } = require('../extensions/index.js');
+const {
+    NotImplementedError
+} = require('../extensions/index.js');
 
 /**
  * Extract season from given date and expose the enemy scout!
@@ -12,34 +14,36 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function getSeason(date) {
-//   const seasons = {
-//     'spring': [2, 3, 4],
-//     'summer': [5, 6, 7],
-//     'autumn': [8, 9, 10],
-//     'winter': [0, 1, 11]
-// };
+    throw new NotImplementedError('Not implemented');
 
-// if (arguments.length === 0 ){
-//     return 'Unable to determine the time of year!';
-// }
+    // const seasons = {
+    //     'spring': [2, 3, 4],
+    //     'summer': [5, 6, 7],
+    //     'autumn': [8, 9, 10],
+    //     'winter': [0, 1, 11]
+    // };
 
-// if (!(date instanceof Date )) {
-//     return 'Invalid date!';
-// } 
-//   if (date.getMonth() in seasons.spring) {
-//         return 'spring';
-//     } else if (date.getMonth() in seasons.summer){
-//         return 'summer';
-//     } else if (date.getMonth() in seasons.autumn){
-//         return 'autumn';
-//     } else if (date.getMonth() in seasons.winter){
-//         return 'winter';
-//     } 
-//     // else {
-//     //   return 
-//     // }
+    // if (arguments.length === 0) {
+    //     return 'Unable to determine the time of year!';
+    // }
+
+    // if (!(date instanceof Date)) {
+    //     return 'Invalid date!';
+    // }
+    // if (date.getMonth() in seasons.spring) {
+    //     return 'spring';
+    // } else if (date.getMonth() in seasons.summer) {
+    //     return 'summer';
+    // } else if (date.getMonth() in seasons.autumn) {
+    //     return 'autumn';
+    // } else if (date.getMonth() in seasons.winter) {
+    //     return 'winter';
+    // }
+    // // else {
+    // //   return 
+    // // }
 }
 
 module.exports = {
-  getSeason
+    getSeason
 };
