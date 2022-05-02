@@ -14,34 +14,34 @@ const {
  * 
  */
 function getSeason(date) {
-    throw new NotImplementedError('Not implemented');
+    // throw new NotImplementedError('Not implemented');
 
-    // const seasons = {
-    //     'spring': [2, 3, 4],
-    //     'summer': [5, 6, 7],
-    //     'autumn': [8, 9, 10],
-    //     'winter': [0, 1, 11]
-    // };
+    const seasons = {
+        'spring': [2, 3, 4],
+        'summer': [5, 6, 7],
+        'autumn': [8, 9, 10],
+        'winter': [0, 1, 11]
+    };
 
-    // if (arguments.length === 0) {
-    //     return 'Unable to determine the time of year!';
-    // }
+    if (arguments.length === 0) {
+        return 'Unable to determine the time of year!';
+    }
 
-    // if (!(date instanceof Date)) {
-    //     return 'Invalid date!';
+    if (!(date instanceof Date)) {
+        return 'Invalid date!';
+    }
+    if (date.getMonth() in seasons.spring) {
+        return 'spring';
+    } else if (date.getMonth() in seasons.summer) {
+        return 'summer';
+    } else if (date.getMonth() in seasons.autumn) {
+        return 'autumn';
+    } else if (date.getMonth() in seasons.winter) {
+        return 'winter';
+    }
+    // else {
+    //   return 
     // }
-    // if (date.getMonth() in seasons.spring) {
-    //     return 'spring';
-    // } else if (date.getMonth() in seasons.summer) {
-    //     return 'summer';
-    // } else if (date.getMonth() in seasons.autumn) {
-    //     return 'autumn';
-    // } else if (date.getMonth() in seasons.winter) {
-    //     return 'winter';
-    // }
-    // // else {
-    // //   return 
-    // // }
 }
 
 module.exports = {
